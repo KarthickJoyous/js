@@ -1,0 +1,24 @@
+<script>
+    const main = () => {
+        const num1 = 10, num2 = 5;
+
+        console.log("Addition : " + (num1 + num2)); // Addition : 15
+        console.log("Subtraction : " + (num1 - num2)); // Subtraction : 5
+        console.log("Multiplication : " + (num1 * num2)); // Multiplication : 50
+        console.log("Division : " + (num1 / num2)); // Division : 2
+        console.log("Modulus : " + (num1 % num2)); // Modulus : 0
+
+        const firstRank = 100, secondRank = "100";
+
+        console.log(firstRank == secondRank); // true
+        console.log(firstRank === secondRank); // false
+
+        let isLoggedIn = true;
+        let hasProfile = false;
+
+        console.log(isLoggedIn && hasProfile); // false
+        console.log(isLoggedIn || hasProfile); // true
+    }
+
+    main();
+</script>

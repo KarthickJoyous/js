@@ -1,0 +1,58 @@
+<script>
+    let age = 25;
+    // let age = 25; Cannot redeclare block-scoped variable 'age'.javascript
+    const name = "John";
+    var city = "New York"; // old way
+
+    age = 26;      // ✅ allowed
+    // name = "Doe"; // ❌ error, const cannot be changed
+    city = "California"; // ✅ allowed
+
+    console.log(age);   // 26
+    console.log(name);  // John
+    console.log(city);  // California
+
+    function action() {
+        let color = 'red';
+        console.log("Color : " + color);
+
+        console.log(age);   // 26
+        console.log(name);  // John
+
+        let city = "Dallas";
+
+        console.log(city);
+    }
+
+    action();
+    
+    console.log(city);  // California
+
+    // console.log(color); // color is not defined
+
+    play();
+
+    function play() {
+        var game = 'cricket';
+        console.log(game);
+    }
+
+    console.log(typeof game); // undefined
+
+    if (true) {
+        var game = 'cricket';
+    }
+
+    console.log("game", game);
+
+    const firstName = 'John';
+    const lastName = 'Smith';
+
+    console.log(`Hello ${firstName} ${lastName}!`);
+
+    const birthYear = 1999;
+    const currentYear = 2025;
+    const AGE = currentYear - birthYear;
+
+    console.log(`You are ${AGE} years old`);
+</script>

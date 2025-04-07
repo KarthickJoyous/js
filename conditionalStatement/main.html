@@ -1,0 +1,43 @@
+<script>
+    const checkAge = (age) => {
+
+        if(age < 13) {
+            console.log("Child");
+        }else if(age >= 13 && age <= 19) {
+            console.log("Teenager");
+        }else{
+            console.log("Adult");
+        }
+    }
+
+    checkAge(12); // Child
+    checkAge(18); // Teenager
+    checkAge(25); // Adult
+
+    const checkNumber = (num) => {
+        if(num > 0) {
+            console.log("Positive");
+        }else if (num < 0) {
+            console.log("Negative");
+        } else {
+            console.log("Zero");
+        }
+    }
+
+    checkNumber(19); // Positive
+    checkNumber(-19); // Negative
+    checkNumber(0); // Zero
+
+    const login = (username, password) => {
+        if(username && password) {
+            console.log("Login successful");
+        } else {
+            console.log("Missing credentials");
+        }
+    }
+
+    login("gyuash", "9878sajhdb*"); // Login successful
+    login("", ""); // Missing credentials
+    login("", "9878sajhdb*"); // Missing credentials
+    login("gyuash", ""); // Missing credentials
+</script>

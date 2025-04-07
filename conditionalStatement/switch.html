@@ -1,0 +1,67 @@
+<script>
+    const findDay = (day) => {
+
+        switch (day) {
+            case 1:
+                console.log("Monday");
+                break;
+
+            case 2:
+                console.log("Tuesday");
+                break;
+
+            case 3:
+                console.log("Wednesday");
+                break;
+
+            case 4:
+                console.log("Thursday");
+                break;
+
+            case 5:
+                console.log("Friday");
+                break;
+
+            case 6:
+                console.log("Saturday");
+                break;
+
+            case 7:
+                console.log("Sunday");
+                break;
+            
+            default:
+                console.log("Invalid day");
+        }
+    }
+
+    findDay(1); // Monday
+    findDay(2); // Tuesday
+    findDay(3); // Wednesday
+    findDay(4); // Thursday
+    findDay(5); // Friday
+    findDay(6); // Saturday
+    findDay(7); // Sunday
+    findDay(8); // Invalid day
+
+    const oddOREven = (num) => {
+        const result = num % 2 == 0 ? "EVEN" : "ODD";
+        console.log(`${num} is ${result}`);
+    }
+
+    oddOREven(10); // 10 is EVEN
+    oddOREven(19); // 19 is ODD
+    oddOREven(0); // 0 is EVEN
+
+    const calculateResult = (score) => {
+        const result = score >= 90 ? "Excellent" : (score > 70 && score < 90 ? "Good" : "Needs improvement");
+        console.log(result);
+    }
+
+    calculateResult(100); // Excellent
+    calculateResult(90); // Excellent
+    calculateResult(70); // Needs improvement
+    calculateResult(85); // Good
+    calculateResult(90); // Excellent
+    calculateResult(38); // Needs improvement
+</script>

@@ -1,0 +1,36 @@
+<script>
+    const main = () => {
+        const colors = ['red', 'blue', 'black', 'pink', 'yellow'];
+        console.log(`First element is ${colors[0]}`);
+        console.log(`Last element is ${colors[colors.length - 1]}`);
+        console.log(colors.shift());
+        console.log(colors);
+    }
+
+    main();
+
+    const numbers = () => {
+        const numbers = [10, 20, 30, 40, 50];
+
+        console.log("Numbers : ", numbers);
+
+        numbers[2] = 99;
+
+        console.log("Numbers : ", numbers);
+        console.log(`Numbers length : ${numbers.length}`);
+    }
+
+    numbers();
+
+    const printAll = () => {
+        const colors = ['red', 'blue', 'black', 'pink', 'yellow'];
+
+        for (let i = 0; i < colors.length; i++) {
+            console.log(colors[i]);
+        }
+
+        colors.forEach(color => console.log(color));
+    }
+
+    printAll();
+</script>
