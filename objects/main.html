@@ -23,4 +23,48 @@
     }
 
     main();
+
+    const library = () => {
+        const library = {
+            books: [
+                {
+                    title: 'Book 1',
+                    author: 'Author 1',
+                    pages: 100
+                },
+                {
+                    title: 'Book 2',
+                    author: 'Author 2',
+                    pages: 200
+                },
+                {
+                    title: 'Book 3',
+                    author: 'Author 3',
+                    pages: 300
+                }
+            ]
+        }
+
+        library.books.push({
+            title: 'Book 4',
+            author: 'Author 4',
+            pages: 400
+        })
+
+        console.log(library.books[1].title);
+
+        library.books.forEach(book => console.log(`${book.title} by ${book.author}, Pages ${book.pages}`));
+    }
+
+    library();
+
+    const play = () => {
+        const user = { name: "Alice", age: 25 };
+        const updated = { ...user, age: 26, city: "NYC" };
+
+        console.log(updated); // { name: 'Alice', age: 26, city: 'NYC' }
+        console.log(user);
+    }
+
+    play();
 </script>

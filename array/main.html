@@ -33,4 +33,27 @@
     }
 
     printAll();
+
+    const printMovies = () => {
+        const movies = [];
+
+        movies.push(1);
+        movies.push(2);
+
+        movies.pop();
+        movies.pop();
+        
+        movies.unshift(1);
+        movies.unshift(2);
+
+        movies.shift();
+
+        console.log(movies.indexOf(1)); // 0
+        console.log(movies.indexOf(10)); // -1
+
+        console.log(movies.length); // 1
+        console.log(movies);
+    }
+
+    printMovies();
 </script>
